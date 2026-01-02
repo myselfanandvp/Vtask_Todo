@@ -24,7 +24,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
       <div className="flex items-center gap-3 flex-1 overflow-hidden">
         <button
           onClick={() => toggleComplete(todo.id)}
-          className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors duration-200 mt-1 ${todo.completed
+          className={`shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors duration-200 mt-1 ${todo.completed
             ? 'bg-cat-green border-cat-green'
             : 'border-cat-overlay0 hover:border-cat-mauve'
             }`}
@@ -59,7 +59,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
 
       <button
         onClick={() => deleteTodo(todo.id)}
-        className="ml-2 opacity-0 group-hover:opacity-100 text-cat-overlay0 hover:text-cat-red transition-all p-2 rounded-lg hover:bg-cat-red/10 flex-shrink-0"
+        className="ml-2 opacity-0 group-hover:opacity-100 text-cat-overlay0 hover:text-cat-red transition-all p-2 rounded-lg hover:bg-cat-red/10 shrink-0"
         aria-label="Delete"
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
